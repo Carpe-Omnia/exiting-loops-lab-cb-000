@@ -1,7 +1,7 @@
 function breakOut(array, changeValue, stopValue) {
-  array.forEach(element => {
+  array.forEach(element, index, array) => {
     console.log(element)
-    if (element !== stopValue) {element = changeValue}
+    if (element !== stopValue) {array[index]= changeValue}
     else {return array}
   })
   return array
