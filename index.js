@@ -9,5 +9,6 @@ function keepGoing(array, changeValue, skipValue) {
   for(let i = 0; i < array.length; i++) {
     if (array[i] !== skipValue) {array[i] = changeValue}
   }
+  return array
 }
 function findBy(array, findFn) {}
