@@ -1,10 +1,8 @@
 function breakOut(array, changeValue, stopValue) {
-  array.forEach(element, index, array) => {
-    console.log(element)
-    if (element !== stopValue) {array[index]= changeValue}
-    else {return array}
-  })
-  return array
+  for(let i = 0; i < array.length; i++) {
+    if (array[i] !== stopValue) {array[i] = changeValue}
+    else {break }
+  }
 }
 function keepGoing(array, changeValue, skipValue) {}
 function findBy(array, findFn) {}
